@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>IOS Calculator</title>
+  </head>
+  <body class="bg-black text-white">
+    <main class="mx-auto flex flex-col items-center justify-center mt-20">
+      <div
+        class="w-[284px] h-[100px] text-5xl flex flex-col items-end justify-end pb-5"
+        id="result"
+      >
+        <div
+          id="previous-operand"
+          class="text-xl text-zinc-400"
+          data-previous-operand
+        >
+          123 +
+        </div>
+        <div id="current-operand" data-current-operand>345</div>
+      </div>
+      <div class="w-auto h-full grid grid-cols-4 gap-2">
+        <button class="item upper-button" id="clearButton" data-all-clear>
+          AC
+        </button>
+        <button class="item upper-button" id="plusAndMinusButton" data-delete>
+          DEL
+        </button>
+        <button class="item upper-button" id="percentButton" data-operation>
+          %
+        </button>
+        <button class="item func-button" id="divideButton" data-operation>
+          /
+        </button>
+        <button class="item" data-number>7</button>
+        <button class="item" data-number>8</button>
+        <button class="item" data-number>9</button>
+        <button class="item func-button" id="multiplyButton" data-operation>
+          X
+        </button>
+        <button class="item" data-number>4</button>
+        <button class="item" data-number>5</button>
+        <button class="item" data-number>6</button>
+        <button class="item func-button" id="subtrackButton" data-operation>
+          -
+        </button>
+        <button class="item" data-number>1</button>
+        <button class="item" data-number>2</button>
+        <button class="item" data-number>3</button>
+        <button class="item func-button" id="addButton" data-operation>
+          +
+        </button>
+        <button class="item col-span-2 w-full" data-number>0</button>
+        <button class="item" id="commaButton" data-number>.</button>
+        <button class="item func-button" id="resultButton" data-equals>
+          =
+        </button>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

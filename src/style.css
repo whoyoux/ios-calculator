@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .item {
+    @apply w-[65px] h-[65px] bg-zinc-800 rounded-full flex items-center justify-center text-xl select-none;
+  }
+
+  .upper-button {
+    @apply bg-gray-400 text-black;
+  }
+
+  .func-button {
+    @apply bg-orange-400;
+  }
+}
